@@ -1,11 +1,63 @@
 body{
-  font-family: "Arial", sans-serif;
+  font-family: "Helvetica", sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  height:70vh;
+  width:100%;
+  background-color: #5ae3e8;
+  background-image: linear-gradient(to bottom left,#ffafbd, #ffc3a0);
+  margin:auto;
+  padding:0;
+  text-align: center;
+}
+
+.container h1{
+  font-size: 60px;
+}
+
+.github{
+  font-size: 20px;
+  text-decoration: none;
+  outline: none;
+  color:white;
+  padding:10px;
+  border: 4px solid white;
+  transition: .25s ease-in;
+}
+
+.github:hover{
+  transform: scale(1.05);
 }
 
 .project{
-  margin:20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
+  align-items: top;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-bottom: 70px;
+}
+
+.project-img{
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5%;
+  box-shadow: 0px 7px 7px rgba(135, 150, 150,0.7);
+}
+
+.projects-container{
+  margin:70px 12vw;
+}
+
+.projects-container h2{
+  font-size: 35px;
 }

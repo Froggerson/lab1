@@ -16,24 +16,44 @@
 </head>
 
 <body>
-	<div>
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div>
+		<div class="container">
 			<h1>Jennifer Pham</h1>
-			<p>Github: Froggerson</p>
+			<a class="github" href="https://github.com/Froggerson">Github: Froggerson</a>
 		</div>
 
+	<div class="projects-container">
 		<h2>Projects</h2>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		<div class= "project" id="project1">
-			<a href="project.html">
-				<img src="images/cat1.bmp" alt="Lorem Pixel image">
-				<p>Cat Finder</p>
+			<div class="project-text">
+				<h3>Cat Finder</h3>
+				<p>Lost your cat? No worries. Our app uses blockchain and GPS to track down your cat.</p>
+			</div>
+			<a href="project.html" style="text-align:center">
+				<div class="project-img" style="background-image: url(images/cat1.bmp)"></div>
 			</a>
-			<p>Lost your cat? No worries. Our app uses blockchain and GPS to track down your cat.</p>
+		</div>
+		<div class= "project" id="project2">
+			<div class="project-text">
+				<h3>CatNip</h3>
+				<p>Find the best cat cafes in your area.</p>
+			</div>
+			<a href="project.html" style="text-align:center">
+				<div class="project-img" style="background-image: url(images/catsoup.jpg)"></div>
+			</a>
+		</div>
+		<div class= "project" id="project2">
+			<div class="project-text">
+				<h3>Not Cat</h3>
+				<p>Finally, something that is not about cats. Why the sudden departure? Who knows.</p>
+			</div>
+			<a href="project.html" style="text-align:center">
+				<div class="project-img" style="background-image: url(images/lorempixel.city.2.jpeg)"></div>
+			</a>
 		</div>
 	</div>
 </body>
